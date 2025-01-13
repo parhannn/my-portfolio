@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/style/style.css" />
+    <link rel="icon" href="/static/img/f-logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <label class="logo">
+        <span class="logo-text">Farhan Apri Kesuma</span>
+        <a href="{{ url_for('home') }}"
+          ><img src="/static/img/f-logo.png" alt="Logo" class="web-logo"
+        /></a>
+      </label>
+
+      <ul>
+        <li><a class="active-nav" href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('profile') }}">Profil</a></li>
+        <li><a href="{{ url_for('project') }}">Projek Saya</a></li>
+        <li><a href="{{ url_for('skill') }}">Keahlian</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Selamat Datang!</h1>
+        <p>
+          Saya Farhan Apri Kesuma, mahasiswa Teknik Informatika ITERA memiliki
+          ketertarikan dibidang Web Development dan Mobile Apps.
+        </p>
+        <a href="{{ url_for('profile') }}" class="btn">Lihat Profil Saya</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Farhan Apri Kesuma</p>
+    </footer>
+  </body>
+</html>

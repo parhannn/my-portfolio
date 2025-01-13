@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projek Saya</title>
+    <link rel="stylesheet" href="/static/style/style.css" />
+    <link rel="stylesheet" href="/static/style/project.css" />
+    <link rel="icon" href="/static/img/f-logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <label class="logo">
+        <span class="logo-text">Farhan Apri Kesuma</span>
+        <a href="{{ url_for('home') }}"
+          ><img src="/static/img/f-logo.png" alt="Logo" class="web-logo"
+        /></a>
+      </label>
+
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('profile') }}">Profil</a></li>
+        <li>
+          <a class="active-nav" href="{{ url_for('project') }}">Projek Saya</a>
+        </li>
+        <li><a href="{{ url_for('skill') }}">Keahlian</a></li>
+      </ul>
+    </nav>
+
+    <div class="container-main">
+      <aside class="card-profile">
+        <div class="img-profile">
+          <img src="/static/img/photo.png" alt="github photo" />
+        </div>
+        <div class="info-profile">
+          <h2>Farhan Apri Kesuma</h2>
+          <p>parhannn</p>
+          <a href="https://github.com/parhannn/" class="link-github">
+            <i class="fab fa-github"></i> Github Saya
+          </a>
+        </div>
+      </aside>
+
+      <section class="list-repos">
+        <div class="repos-card">
+          <h3>LosFilm App</h3>
+          <p>
+            LosFilm is a mobile based application that has a lot of useful
+            features. LosFilm is suitable for movie enthusiasts who want a
+            variety of films from different genres.
+          </p>
+          <a
+            href="https://github.com/parhannn/Project-LosFilm"
+            class="link-repos"
+          >
+            <i class="fab fa-github"></i> Visit
+          </a>
+        </div>
+
+        <div class="repos-card">
+          <h3>Github List App</h3>
+          <p>
+            Github List App is an user github list app that can show github user
+            and add it to user favorite list. This app using retrofit to receive
+            data from github API.
+          </p>
+          <a
+            href="https://github.com/parhannn/my-github-list"
+            class="link-repos"
+          >
+            <i class="fab fa-github"></i> Visit
+          </a>
+        </div>
+
+        <div class="repos-card">
+          <h3>HiBeauty</h3>
+          <p>HiBeauty is a Bangkit Capstone Project</p>
+          <br /><br /><br /><br />
+          <a href="https://github.com/Martinexe4/HiBeauty" class="link-repos">
+            <i class="fab fa-github"></i> Visit
+          </a>
+        </div>
+
+        <div class="repos-card">
+          <h3>RESCUE: Save The Wildlife</h3>
+          <p>
+            RESCUE is a strategy, puzzle, tower defense, and real time strategy
+            genre game that settled on wood in Sumatera Island. Animals should
+            protect their home from dangerous hunters. This game allows player
+            to place animal on certain grid to attack hunters that appeared to
+            destroy the forest.
+          </p>
+          <a
+            href="https://minos-studio.itch.io/rescue-save-the-wildlife"
+            class="link-repos"
+          >
+            <i class="fab fa-itch-io"></i> Visit
+          </a>
+        </div>
+
+        <div class="repos-card">
+          <h3>SiTAKES</h3>
+          <p>
+            SiTAKES is a Geographic Information System (GIS) designed to
+            visualize and manage spatial data of health facilities spread across
+            Sukarame and Way Halim Districts, Bandar Lampung.
+          </p>
+          <a
+            href="https://github.com/parhannn/sig-tubes"
+            class="link-repos"
+          >
+            <i class="fab fa-github"></i> Visit
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Farhan Apri Kesuma</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil</title>
+    <link rel="stylesheet" href="/static/style/style.css" />
+    <link rel="stylesheet" href="/static/style/profile.css" />
+    <link rel="icon" href="/static/img/f-logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <label class="logo dont-hover">
+        <span class="logo-text">Farhan Apri Kesuma</span>
+        <a href="{{ url_for('home') }}"
+          ><img src="/static/img/f-logo.png" alt="Logo" class="web-logo"
+        /></a>
+      </label>
+
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li>
+          <a class="active-nav" href="{{ url_for('profile') }}">Profil</a>
+        </li>
+        <li><a href="{{ url_for('project') }}">Projek Saya</a></li>
+        <li><a href="{{ url_for('skill') }}">Keahlian</a></li>
+      </ul>
+    </nav>
+
+    <div class="profile-card">
+      <div class="profile-image">
+        <img src="/static/img/profile-photo.png" alt="Profile Image" />
+      </div>
+      <div class="profile-info">
+        <h2>Farhan Apri Kesuma</h2>
+        <h3>Undergraduate Informatics Engineering</h3>
+        <p>Website & Android Development interest</p>
+        <div class="social-links">
+          <a href="https://github.com/parhannn/"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://www.instagram.com/prhnnn_ak/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/farhan-apri-kesuma/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Farhan Apri Kesuma</p>
+    </footer>
+  </body>
+</html>
